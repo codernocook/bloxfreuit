@@ -8,14 +8,15 @@ if game.GameId == 994732206 then
     end
 
     local LibraryUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local ScriptWindows =  LibraryUI.CreateLib("Prison Life".."", "Sentinel")
+    local ScriptWindows =  LibraryUI.CreateLib("Blox Freuit".."", "Sentinel")
 
      --Tab--
      local ServerModerator = ScriptWindows:NewTab("ServerMod")
      local ExploitTab = ScriptWindows:NewTab("Exploit")
      -------
--- Anti script issue
-repeat task.wait() until game.Loaded and game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+    -- Anti script issue
+    repeat task.wait() until game.Loaded and game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+
      --ControlVar--
     local plr = game:GetService("Players").LocalPlayer
     local char = plr.Character or plr.CharacterAdded
