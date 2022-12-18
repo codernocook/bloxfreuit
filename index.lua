@@ -91,33 +91,66 @@ if game.GameId == 994732206 then
                 
                 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
                 task.wait(.1)
-                local args = {
+                local args1 = {
                     [1] = nil;
                 }
                 
-                game:GetService("ReplicatedStorage").Remotes.Location:FireServer(unpack(args))
-                local args = {
-                    [1] = "unequipWeapon",
+                game:GetService("ReplicatedStorage").Remotes.Location:FireServer(unpack(args1))
+                local args2 = {
+                    [1] = "weaponChange",
                     [2] = "Combat"
                 }
                 
+                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer(unpack(args2))
+                
+                local args01 = {
+                    [1] = "hit",
+                    [2] = {
+                        [1] = nil,
+                        [2] = nil,
+                        [3] = nil
+                    },
+                    [3] = 4,
+                    [4] = ""
+                }
+                
                 game:GetService("ReplicatedStorage").RigControllerEvent:FireServer(unpack(args))
-                local args = {
+
+                local args02 = {
+                    [1] = 999999,
+                    [2] = 999999
+                }
+                
+                game:GetService("ReplicatedStorage").Remotes.Validator:FireServer(unpack(args02))
+
+                local args03 = {
                     [1] = math.huge,
                     [2] = math.huge
                 }
                 
-                game:GetService("ReplicatedStorage").Remotes.Validator:FireServer(unpack(args))
-                local args = {
+                game:GetService("ReplicatedStorage").Remotes.Validator:FireServer(unpack(args03))
+                
+
+                local args4 = {
+                    [1] = "unequipWeapon",
+                    [2] = "Combat"
+                }
+                
+                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer(unpack(args4))
+
+                local args5 = {
                     [1] = "DoubleJump"
                 }
                 
-                game:GetService("ReplicatedStorage").Remotes.CommE:FireServer(unpack(args))
-                local args = {
-                    [1] = "Dodge",
-                    [3] = math.huge,
-                    [4] = true
+                game:GetService("ReplicatedStorage").Remotes.CommE:FireServer(unpack(args5))
+                
+
+                local args7 = {
+                    [1] = "BuyBoat",
+                    [2] = "Dinghy"
                 }
+                
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args7))
                 
                 game:GetService("ReplicatedStorage").Remotes.CommE:FireServer(unpack(args))
             end)
