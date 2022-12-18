@@ -37,7 +37,7 @@ if game.GameId == 994732206 then
     plr.OnTeleport:Connect(function(State)
         if State == Enum.TeleportState.Started then
             if queueteleport then
-                queueteleport("loadstring(game:HttpGet('https://occipital-garnet-stallion.glitch.me'))()")
+                queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/codernocook/bloxfreuit/main/index.lua'))()")
             end
         end
     end)
