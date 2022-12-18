@@ -1,1 +1,1 @@
-loadstring(game:HttpGet(nil, true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/codernocook/bloxfreuit/main/index.lua", true))()
